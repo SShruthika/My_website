@@ -30,7 +30,7 @@ const AllProduct = ({heading}) => {
 
   return (
    
-    <div className='my-5'>
+    <div className='my-5 bg-red-100'>
     <h2 className="font-bold text-2xl text-slate-800 mb-4">{heading}</h2>
 
     {/* <div className='flex gap-4 justify-center overflow-scroll scrollbar-none '>

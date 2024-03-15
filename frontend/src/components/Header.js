@@ -70,7 +70,7 @@ const Header = () => {
                      
                      {userData.image ? (
                   <p
-                    className="cursor-pointer text-white px- bg-blue-500"
+                    className="cursor-pointer text-white px-5 bg-green-600"
                     onClick={handleLogout}
                   >
                     Logout ({userData.firstName}){" "}

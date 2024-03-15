@@ -6,6 +6,7 @@ import {GrPrevious,GrNext} from 'react-icons/gr'
 import {CiForkAndKnife} from "react-icons/ci"
 import FilterProduct from '../FilterProduct'
 import AllProduct from '../AllProduct'
+import sky from '../Assest/sky.jpg'
 
 
 const Home = () => {
@@ -31,8 +32,10 @@ const Home = () => {
 
 
   return (
-    <div className="p-2 md:p-4">
-     <div className='md:flex gap-4 py-2'>
+    
+    <div className="p-2 md:p-4 bg-red-100">
+  
+     <div className='md:flex gap-4 py-2 bg-red-100'>
 
        <div className='md:w-1/2'>
          <div className='flex gap-3 bg-slate-300 w-36 px-2 items-center rounded-full'>
@@ -49,11 +52,13 @@ const Home = () => {
        </div>
     
 
+
        <div className='"md:w-1/2 flex flex-wrap gap-5 p-4 justify-center'>
         {
          homeProductCartList[0] ? homeProductCartList.map(e1 =>{
             return(
               <HomeCard
+              
               key={e1._id}
               id={e1._id}
               image={e1.image}
@@ -76,7 +81,7 @@ const Home = () => {
         }  
        </div>
      </div>
-     <div className=''>
+     <div className='bg-red-100'>
      <div className='flex w-full items-center'>
      <h2 className="font-bold text-2xl text-slate-800 mb-4">Fresh Vegetables</h2>
       <div className='ml-auto flex gap-4'>
